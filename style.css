@@ -38,7 +38,40 @@ align-items centralizar na vertical
 }
 
 .instagram-phone img{
+    position:relative;
     height: 50rem;
+}
+.instagram-phone .transicao{
+   /* position: absolute;
+    left: 34%;
+    margin-left: -120px;
+    top: 29%;
+    margin-top: -75px;
+    width: 19%;
+    height: 70.5%;
+    background-color:#ffffff;
+    */
+
+    position: absolute;
+    margin-top: 20px;
+    width: 250px;
+    height: 450px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-phone .transicao img{
+    opacity: 0;
+    position: absolute;
+    width: 255px;
+    height: 465px;
+}
+
+.instagram-phone .transicao img.selected{
+   opacity: 1;
 }
 /*
 justify-content na vertical
@@ -153,7 +186,7 @@ align-items  na horizotal
     .instagram-phone{
         display: none;
     }
-
+    
     .instagram-continue{
         width: 100%;
     }
